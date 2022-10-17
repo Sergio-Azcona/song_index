@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get '/', to: 'welcome#index'
   get '/songs', to: 'songs#index'
   get '/songs/:id', to: 'songs#show'
-
+  get '/artist/:artist_id/songs', to: 'artist_songs#index'
 end
